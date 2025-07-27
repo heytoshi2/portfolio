@@ -31,6 +31,63 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* Responsive fixes you provided */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        position: relative;
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sidebar-links {
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 0;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .username-container {
+        margin: 0;
+        height: auto;
+        border-radius: 12px;
+        padding: 6px 12px;
+      }
+      .main-content {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px 20px;
+      }
+
+      .right-bar {
+        display: none;
+      }
+
+      /* Optional: make main-content take full width on mobile */
+      .main-content {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+      }
+
+      /* Optional: adjust layout-container if needed */
+      .layout-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 767px) {
+      html, body {
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Optional: prevent body scrolling on mobile */
+      }
+    }
   </style>
 </head>
 <body>
@@ -38,7 +95,6 @@
     <h1>Tsogt Enkhbat</h1>
     <p>Spiritual Progression and Professional Growth Portfolio</p>
   </header>
-
 
   <section id="portfolio-intro">
     <h2>Professional Growth Portfolio Introduction</h2>
@@ -53,63 +109,87 @@
     </p>
   </section>
 
-    <section id="resume">
-  <h2>Résumé</h2>
-  <p><strong>Tsogt Enkhbat</strong><br />
-  tsogt.enkhbat@gmail.com | <a href="https://www.linkedin.com/in/tsogt-enkhbat/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 801 388 2244</p>
+  <section id="enhanced-spiritual-content">
+    <h2>Deeper Spiritual Reflections</h2>
+    <p>
+      Over the years, I have encountered moments where my faith was tested alongside my professional skills. For example, during a critical project deadline, I faced unexpected setbacks. Instead of succumbing to stress, I chose to pray and seek patience. This experience strengthened my testimony that Christ’s guidance transcends every aspect of life.
+    </p>
+    <p>
+      Elder Dieter F. Uchtdorf taught, “The future is as bright as your faith.” This has inspired me to approach challenges with hope and perseverance, knowing that my work can be a form of worship and service.
+    </p>
+  </section>
 
-  <h3>Education</h3>
-  <p><strong>Bachelor of Applied Science - Software Engineering</strong> (2025)<br />
-  Ensign College, Salt Lake City, UT</p>
-  <p>Certificate - Computer Science</p>
-  <ul>
-    <li>Next.js</li>
-    <li>Vercel</li>
-    <li>AWS</li>
-    <li>Spring Boot</li>
-  </ul>
+  <section id="competency-spiritual-alignment">
+    <h2>Professional Competencies Aligned with Spiritual Beliefs</h2>
+    <p>
+      My skills in software development—such as problem-solving, collaboration, and ethical coding—reflect spiritual principles like patience, honesty, and service. When I debug code, I practice patience; when I collaborate with teammates, I demonstrate charity; and when I handle sensitive data, I uphold integrity as taught in the scriptures.
+    </p>
+    <p>
+      This integration motivates me to be a disciple not only in faith but in my professional life, making every project an opportunity to serve others and glorify God.
+    </p>
+  </section>
 
-  <p><strong>Bachelor of Science in Computer Science</strong> (2019)<br />
-  Westminster University, Salt Lake City, UT</p>
+  <section id="resume">
+    <h2>Résumé</h2>
+    <p><strong>Tsogt Enkhbat</strong><br />
+      tsogt.enkhbat@gmail.com | <a href="https://www.linkedin.com/in/tsogt-enkhbat/" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 801 388 2244
+    </p>
 
-  <h3>Experience</h3>
+    <h3>Education</h3>
+    <p><strong>Bachelor of Applied Science - Software Engineering</strong> (2025)<br />
+      Ensign College, Salt Lake City, UT</p>
+    <p>Certificate - Computer Science</p>
+    <ul>
+      <li>Next.js</li>
+      <li>Vercel</li>
+      <li>AWS</li>
+      <li>Spring Boot</li>
+    </ul>
 
-  <p><strong>Fullstack Developer</strong> (2021 - 2024)<br />
-  E-ESC LLC, Ulaanbaatar, Mongolia</p>
-  <ul>
-    <li>Led and scaled gaming servers on AWS EC2 using containerization and automation tools, supporting 500+ daily players</li>
-    <li>Engineered 90% of backend APIs using modern web frameworks and databases, reducing backend issues by 20%</li>
-    <li>Refined and improved responsive UI components with React.js, enhancing user experience and improving team efficiency by 15%</li>
-  </ul>
+    <p><strong>Bachelor of Science in Computer Science</strong> (2019)<br />
+      Westminster University, Salt Lake City, UT</p>
 
-  <p><strong>Fullstack Developer</strong> (2020 - 2021)<br />
-  STEPPE LINK LLC, Ulaanbaatar, Mongolia</p>
-  <ul>
-    <li>Developed responsive web pages and reusable components with modern frameworks and UI libraries, accelerating development speed by 30%</li>
-    <li>Delivered RESTful APIs and real-time features, coordinating efforts across teams to streamline state management and accelerate feature delivery by 20%</li>
-    <li>Maintained Linux-based game servers with Docker, leading server maintenance strategies to support over 1,000 users</li>
-  </ul>
+    <h3>Experience</h3>
 
-  <p><strong>Fullstack Developer</strong> (2020)<br />
-  DENTSU DATA ARTIST MONGOL, Ulaanbaatar, Mongolia</p>
-  <ul>
-    <li>Built a responsive single-page app with real-time features, increasing user engagement by 15%</li>
-    <li>Connected backend systems to power an AI virtual assistant, collaborating with AI and frontend teams to reduce response time by 30%</li>
-    <li>Designed dynamic web admin panels for Toyota, upgrading product management and boosting workflow efficiency by 25%</li>
-  </ul>
+    <p><strong>Fullstack Developer</strong> (2021 - 2024)<br />
+      E-ESC LLC, Ulaanbaatar, Mongolia
+    </p>
+    <ul>
+      <li>Led and scaled gaming servers on AWS EC2 using containerization and automation tools, supporting 500+ daily players</li>
+      <li>Engineered 90% of backend APIs using modern web frameworks and databases, reducing backend issues by 20%</li>
+      <li>Refined and improved responsive UI components with React.js, enhancing user experience and improving team efficiency by 15%</li>
+    </ul>
 
-  <h3>Skills</h3>
-  <p>Communication, Teamwork, Problem-Solving, Adaptability, Time-management</p>
+    <p><strong>Fullstack Developer</strong> (2020 - 2021)<br />
+      STEPPE LINK LLC, Ulaanbaatar, Mongolia
+    </p>
+    <ul>
+      <li>Developed responsive web pages and reusable components with modern frameworks and UI libraries, accelerating development speed by 30%</li>
+      <li>Delivered RESTful APIs and real-time features, coordinating efforts across teams to streamline state management and accelerate feature delivery by 20%</li>
+      <li>Maintained Linux-based game servers with Docker, leading server maintenance strategies to support over 1,000 users</li>
+    </ul>
 
-  <h3>Technical Skills</h3>
-  <p>Java, JavaScript, TypeScript<br />
-  HTML5, CSS3, React.js, Tailwind CSS, Bootstrap, Chakra UI, Redux, SCSS<br />
-  Node.js, Express.js, GraphQL, REST APIs, WebSocket (Socket.IO), Redis, JWT<br />
-  Firestore, MongoDB, MySQL, PostgreSQL<br />
-  Docker, LinuxGSM, Git, Firebase, AWS, Vercel<br />
-  Agile, SCRUM, Microservices</p>
-</section>
+    <p><strong>Fullstack Developer</strong> (2020)<br />
+      DENTSU DATA ARTIST MONGOL, Ulaanbaatar, Mongolia
+    </p>
+    <ul>
+      <li>Built a responsive single-page app with real-time features, increasing user engagement by 15%</li>
+      <li>Connected backend systems to power an AI virtual assistant, collaborating with AI and frontend teams to reduce response time by 30%</li>
+      <li>Designed dynamic web admin panels for Toyota, upgrading product management and boosting workflow efficiency by 25%</li>
+    </ul>
 
+    <h3>Skills</h3>
+    <p>Communication, Teamwork, Problem-Solving, Adaptability, Time-management</p>
+
+    <h3>Technical Skills</h3>
+    <p>Java, JavaScript, TypeScript<br />
+      HTML5, CSS3, React.js, Tailwind CSS, Bootstrap, Chakra UI, Redux, SCSS<br />
+      Node.js, Express.js, GraphQL, REST APIs, WebSocket (Socket.IO), Redis, JWT<br />
+      Firestore, MongoDB, MySQL, PostgreSQL<br />
+      Docker, LinuxGSM, Git, Firebase, AWS, Vercel<br />
+      Agile, SCRUM, Microservices
+    </p>
+  </section>
 
   <section id="guiding-principles">
     <h2>Guiding Principles</h2>
@@ -145,118 +225,177 @@
     <p><strong>Supporting Scripture:</strong> Ether 12:27: And if men come unto me I will show unto them their weakness.</p>
   </section>
 
-<section id="project-descriptions">
-  <h2>Project Descriptions</h2>
-
-  <article>
-    <h3>Project 1: Ethical Data Analysis App (Upcoming Project)</h3>
-    <p><strong>Goal:</strong><br />
-      I plan to build a data visualization app that helps users understand complex data clearly while fully respecting privacy and keeping accuracy. The app will help users make good decisions without giving up important ethical standards.
-    </p>
-    <p><strong>Tools Planned:</strong><br />
-      Three.js to create interactive 3D visuals, Next.js for the frontend and server rendering, and Node.js for backend services.
-    </p>
-    <p><strong>Faith Reflection:</strong><br />
-      As I get ready to start this project, I know it can be easy to rush data work to meet deadlines. Thinking about Ether 12:27, I see that my main challenge will be handling pressure without losing honesty. I want to slow down, check carefully for mistakes, and focus on honest and accurate work. I believe that doing this with faith and patience will bring results that bless users in a Christlike way.
-    </p>
-  </article>
-
-  <article>
-    <h3>Project 2: E Commerce Website with Integrity First Design (Upcoming Project)</h3>
-    <p><strong>Goal:</strong><br />
-      I aim to build a secure and easy to use e-commerce platform that gives users a smooth experience while protecting their data with strong security.
-    </p>
-    <p><strong>Tools Planned:</strong><br />
-      React.js to build the user interface, Node.js for backend APIs, and MongoDB to keep the database safe.
-    </p>
-    <p><strong>Faith Reflection:</strong><br />
-      Before I launch important parts like the login system, I will pray for guidance and listen carefully to spiritual impressions during development. Doctrine and Covenants 11:12 reminds me to trust these feelings. This will help me catch problems early and keep security strong. I want faith to be part of every technical step because spiritual guidance helps me do my best work.
-    </p>
-  </article>
+  <section id="project-descriptions">
+    <h2>Project Descriptions</h2>
 
     <article>
-    <h3>Project 3: SSP Project – Refinement and Ethical Integration</h3>
-    <p><strong>Author:</strong> Tsogt Enkhbat<br />
-    <strong>Date:</strong> July 2025</p>
-    <strong>GitHub Repository:</strong> <a href="https://github.com/heytoshi/SSP-Project" target="_blank">https://github.com/heytoshi/SSP-Project</a>
+      <h3>Project 1: Ethical Data Analysis App (Upcoming Project)</h3>
+      <p><strong>Goal:</strong><br />
+        I plan to build a data visualization app that helps users understand complex data clearly while fully respecting privacy and keeping accuracy. The app will help users make good decisions without giving up important ethical standards.
+      </p>
+      <p><strong>Tools Planned:</strong><br />
+        Three.js to create interactive 3D visuals, Next.js for the frontend and server rendering, and Node.js for backend services.
+      </p>
+      <p><strong>Faith Reflection:</strong><br />
+        As I get ready to start this project, I know it can be easy to rush data work to meet deadlines. Thinking about Ether 12:27, I see that my main challenge will be handling pressure without losing honesty. I want to slow down, check carefully for mistakes, and focus on honest and accurate work. I believe that doing this with faith and patience will bring results that bless users in a Christlike way.
+      </p>
+    </article>
 
-    <p><strong>Project Overview:</strong><br />
-      The SSP Project is a simple social media web app that I built two years ago using React.js and Node.js. It is similar to Twitter and allows users to:
+    <article>
+      <h3>Project 2: E Commerce Website with Integrity First Design (Upcoming Project)</h3>
+      <p><strong>Goal:</strong><br />
+        I aim to build a secure and easy to use e-commerce platform that gives users a smooth experience while protecting their data with strong security.
+      </p>
+      <p><strong>Tools Planned:</strong><br />
+        React.js to build the user interface, Node.js for backend APIs, and MongoDB to keep the database safe.
+      </p>
+      <p><strong>Faith Reflection:</strong><br />
+        Before I launch important parts like the login system, I will pray for guidance and listen carefully to spiritual impressions during development. Doctrine and Covenants 11:12 reminds me to trust these feelings. This will help me catch problems early and keep security strong. I want faith to be part of every technical step because spiritual guidance helps me do my best work.
+      </p>
+    </article>
+
+    <article>
+      <h3>Project 3: SSP Project – Refinement and Ethical Integration</h3>
+      <p><strong>Author:</strong> Tsogt Enkhbat<br />
+        <strong>Date:</strong> July 2025</p>
+      <p><strong>GitHub Repository:</strong> <a href="https://github.com/heytoshi/SSP-Project" target="_blank" rel="noopener noreferrer">https://github.com/heytoshi/SSP-Project</a></p>
+
+      <p><strong>Project Overview:</strong><br />
+        The SSP Project is a simple social media web app that I built two years ago using React.js and Node.js. It is similar to Twitter and allows users to:
+      </p>
       <ul>
         <li>Create an account</li>
         <li>Post, edit, and delete tweets</li>
         <li>Follow other users</li>
         <li>View tweets from the people they follow</li>
       </ul>
-      The goal was to learn full-stack development and practice working with user data, routing, and basic state management.
+      <p>The goal was to learn full-stack development and practice working with user data, routing, and basic state management.</p>
+
+      <p><strong>Challenges and Areas for Improvement:</strong><br />
+        <ul>
+          <li><strong>Performance:</strong> Tweets can take time to load. There is no lazy loading or pagination initially.</li>
+          <li><strong>Mobile Experience:</strong> Not fully responsive on smaller screens; buttons and text may overlap.</li>
+          <li><strong>User Control:</strong> No way to delete an account or report harmful content.</li>
+        </ul>
+      </p>
+
+      <p><strong>Ethical Considerations:</strong><br />
+        <ul>
+          <li><strong>Data Privacy:</strong> Users should control their data and be able to delete their accounts.</li>
+          <li><strong>Content Responsibility:</strong> A flag or report system is needed to manage harmful content.</li>
+          <li><strong>Fair Usage:</strong> The app should include rate limits and explain what data is collected.</li>
+        </ul>
+      </p>
+
+      <p><strong>Refinements and Ethical Integration:</strong><br />
+        Since the initial build, I have refined the project by adding infinite scroll using the following React component integration:
+      </p>
+      <pre style="background:#eee; padding:10px; overflow-x:auto;">
+&lt;InfiniteScroll
+  dataLength={tweets.length}
+  next={() => setPage((page) => page + 1)}
+  hasMore={hasMore}
+  loader={
+    &lt;div className="flex justify-center my-4 text-gray-500"&gt;
+      &lt;span className="animate-pulse"&gt;Loading more tweets...&lt;/span&gt;
+    &lt;/div&gt;
+  }
+  scrollableTarget="tweet-main-content"
+&gt;
+</pre>
+      <p>
+        Additionally, I improved the responsiveness with CSS media queries to adapt the layout and hide non-essential elements on smaller screens, enhancing the mobile user experience.
+      </p>
+      <p>
+        Planned further improvements include adding user account deletion, a reporting system for harmful content, and rate limiting to ensure fair use. These steps emphasize my commitment to respecting users’ rights and fostering a safe online environment.
+      </p>
+
+      <p><strong>Spiritual Lessons Learned:</strong><br />
+        This project taught me how to balance technical deadlines with honesty and patience. By incorporating prayer and spiritual reflection throughout development, I strengthened my commitment to ethical practices and serving others through technology.
+      </p>
+
+      <p><strong>Conclusion:</strong><br />
+        This project helped me understand the technical side of web development deeply. It also opened my eyes to the importance of respecting users, protecting their data, and creating a safe and ethical experience. By making these changes, I aim to improve both the function and moral integrity of the app.
+      </p>
+    </article>
+  </section>
+
+  <section id="peer-review-evaluation">
+    <h2>Peer-Review Evaluation</h2>
+    <p><strong>Reviewer:</strong> Taylor Muhlestein<br />
+       <strong>Date:</strong> 7/24/2025<br />
+       <strong>Peer:</strong> Tsogt Enkhbat
     </p>
 
-    <p><strong>Challenges and Areas for Improvement:</strong><br />
-      <ul>
-        <li><strong>Performance:</strong> Tweets can take time to load. There is no lazy loading or pagination.</li>
-        <li><strong>Mobile Experience:</strong> Not fully responsive on smaller screens; buttons and text may overlap.</li>
-        <li><strong>User Control:</strong> No way to delete an account or report harmful content.</li>
-      </ul>
+    <h3>1. Project Overview</h3>
+    <p>
+      Tsogt’s SSP Project is a compact version of Twitter built using React.js and Node.js. Users can create accounts, post tweets, edit or delete them, follow others, and see posts from people they follow. It’s a solid foundation for a social media app, especially for something built solo a couple years back.
+    </p>
+    <p>
+      The goals are clearly stated, and the features are well thought out. It’s great that he’s already thinking about ways to improve things like performance and mobile responsiveness, it shows he’s not just stopping at “it works,” but wants to make it better.
     </p>
 
-    <p><strong>Ethical Considerations:</strong><br />
-      <ul>
-        <li><strong>Data Privacy:</strong> Users should control their data and be able to delete their accounts.</li>
-        <li><strong>Content Responsibility:</strong> A flag or report system is needed to manage harmful content.</li>
-        <li><strong>Fair Usage:</strong> The app should include rate limits and explain what data is collected.</li>
-      </ul>
+    <h3>2. Technical Assessment</h3>
+    <p>
+      From a technical perspective, it’s clear Tsogt knows what he’s doing. The use of React and Node is pretty standard for this kind of project, and it sounds like the core functionality is working well. The fact that he's already reflecting on how to make things faster and more mobile-friendly shows a good developer mindset.
+    </p>
+    <p>
+      Adding in some scalability improvements like lazy loading or pagination could help with performance. And throwing in responsive design tweaks would make it much smoother on phones.
     </p>
 
-    <p><strong>Future Plans:</strong><br />
-      <ul>
-        <li>Add pagination or infinite scroll for better performance</li>
-        <li>Improve responsiveness for mobile devices</li>
-        <li>Allow users to delete accounts and view a clear privacy policy</li>
-        <li>Add a report system for harmful content</li>
-        <li>Limit post frequency to reduce spam</li>
-      </ul>
+    <h3>3. Ethics and User Considerations</h3>
+    <p>
+      This part really stood out. A lot of people ignore ethics in small projects, but Tsogt’s already thinking about user data, content safety, and fair treatment. That’s a big deal.
+    </p>
+    <p>
+      He mentions things like letting users delete their data, avoiding unnecessary data collection, and letting people report harmful content. These are great considerations and totally in line with modern expectations, even if the app isn’t huge.
     </p>
 
-    <p><strong>Conclusion:</strong><br />
-      This project helped me understand the technical side of web development. Now, I also see how important it is to respect users, protect their data, and create a safe experience. By making these changes, I can improve both the function and ethics of the app.
+    <h3>4. Suggestions and Feedback</h3>
+    <ul>
+      <li>Try adding pagination or infinite scroll to help load tweets faster.</li>
+      <li>Improve responsiveness so it works better on different screen sizes, especially phones.</li>
+      <li>A simple content report or flagging system could go a long way for moderation.</li>
+    </ul>
+
+    <h3>5. Final Thoughts</h3>
+    <p>
+      Overall, this is a well-built, thoughtful project. Tsogt shows he’s got both the technical chops and the awareness to think about the real-world impact of what he builds. With a few updates, especially around mobile support and moderation tools, this could go from a good student project to something really polished.
     </p>
-  </article>
-</section>
+  </section>
 
-<section id="ethical-dilemma-analysis">
-  <h2>Ethical Dilemma Analysis</h2>
-  <p><strong>Situation:</strong><br />
-    While working on a team project, I saw that a teammate copied code from a private branch without asking permission or giving credit. This broke trust and raised questions about fairness and respect in the team.
-  </p>
-  <p><strong>Actions Taken:</strong><br />
-    At first, I was unsure if I should say anything. Later, the team lead found out and spoke privately with the person involved. They also changed the branch permissions to stop it from happening again. Even though the problem was fixed, it still hurt team trust and morale.
-  </p>
-<p><strong>Spiritual Reflection:</strong><br />
-When I think back on this situation, I realize how important it is to have courage and to stay honest, both as a disciple of Christ and as a professional. Doctrine and Covenants 58:27 to 28 teaches me that I should not just stand by and watch when something is wrong. Instead, I should be anxiously engaged in doing good.
-</p>
+  <section id="ethical-dilemma-analysis">
+    <h2>Ethical Dilemma Analysis</h2>
+    <p>
+      Early in my career, I faced an ethical dilemma when a teammate copied code from a private branch without permission. At the time, I didn’t speak up because I feared confrontation, but I regret that decision. I have since learned that integrity means addressing such issues with courage and kindness.
+    </p>
+    <p><strong>Alternative Actions Considered:</strong></p>
+    <ul>
+      <li>Ignoring the issue to avoid conflict, which risks undermining team trust.</li>
+      <li>Confronting the teammate publicly, which might embarrass them and damage relationships.</li>
+      <li>Privately discussing the concern with the teammate to encourage honesty and teamwork.</li>
+    </ul>
+    <p><strong>Explanation:</strong></p>
+    <p>
+      The best approach is the private conversation. This respects the individual, protects team integrity, and fosters an environment where ethical behavior is encouraged without shame. This aligns with my belief that leadership requires compassion and the courage to uphold standards.
+    </p>
+  </section>
 
-<p>
-At that time, I stayed quiet because I did not want to cause problems. But by staying silent, I allowed the situation to hurt the team’s trust. After praying and thinking about it, I understand now that doing the right thing is sometimes uncomfortable, but it is necessary. I have made a promise to myself that from now on, I will kindly and respectfully speak up when I see something unethical. I want to help create teams that are built on trust and honesty because that is the right thing to do. This is also part of how I honor God through my work.
-</p>
-
-</section>
-
-
-<section id="reflective-experience">
-  <h2>Reflective Experience: Temple Insights</h2>
-  
-  <p><strong>Activity:</strong><br />
-    I visited the temple grounds and found a quiet, peaceful place to sit and think about my life. As a software developer, husband, and follower of Christ, I realized I often separate my work from my faith. I wanted to understand how these parts of my life fit together and what I could learn from that.
-  </p>
-  
-  <p><strong>Insights Gained:</strong><br />
-    I thought about what Elder Bednar said about ropes and how strands twisted together become much stronger than one strand alone. I see my job skills and my spiritual beliefs as two strands. When I put them together, they make me stronger in both areas. This helped me understand that being a good developer is not just about coding well; it is also about being honest, kind, and patient just like my faith teaches me. I want to be the same person at work and at home: someone who works hard, cares for others, and lives with faith every day.
-  </p>
-</section>
-
+  <section id="project-refinements-report">
+    <h2>Project Refinements and Ethical Integration Report</h2>
+    <p>
+      After reviewing feedback and reflecting on ethical responsibilities, I enhanced the SSP Project by adding infinite scroll to improve performance and user experience. I integrated responsive design CSS changes to ensure smooth usability across devices.
+    </p>
+    <p>
+      I also plan to add user account deletion and content reporting features to respect privacy and maintain a safe platform. Rate limiting and clear data usage disclosures will help ensure fair and ethical treatment of users.
+    </p>
+    <p>
+      These refinements show my commitment to combining technical skill with ethical principles, ensuring my projects benefit users and align with my spiritual values.
+    </p>
+  </section>
 
   <footer>
-    <p>© 2025 Tsogt Enkhbat</p>
+    <p>&copy; 2025 Tsogt Enkhbat</p>
   </footer>
 </body>
 </html>
