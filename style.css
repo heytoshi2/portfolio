@@ -1,0 +1,89 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    section {
+      margin-bottom: 40px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+    /* Responsive fixes you provided */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        position: relative;
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .sidebar-links {
+        flex-direction: row;
+        gap: 15px;
+        margin-top: 0;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .username-container {
+        margin: 0;
+        height: auto;
+        border-radius: 12px;
+        padding: 6px 12px;
+      }
+      .main-content {
+        margin-left: 0;
+        margin-top: 10px;
+        padding: 10px 20px;
+      }
+
+      .right-bar {
+        display: none;
+      }
+
+      /* Optional: make main-content take full width on mobile */
+      .main-content {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+      }
+
+      /* Optional: adjust layout-container if needed */
+      .layout-container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 767px) {
+      html, body {
+        height: auto;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Optional: prevent body scrolling on mobile */
+      }
+    }
