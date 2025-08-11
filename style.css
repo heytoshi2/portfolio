@@ -89,20 +89,22 @@
     }
 
 
-       nav {
+    nav {
       background-color: #2980b9;
       padding: 10px 20px;
       box-sizing: border-box;
       border-radius: 0;
       margin-bottom: 20px;
       position: fixed; /* or absolute */
-  left: 0;
-  right: 0;
-  width: 100vw; 
+      left: 0;
+      right: 0;
+      width: 100vw; 
       top: 0;
       z-index: 100;
     }
     nav ul {
+      justify-content: center;
+
       display: flex;
       list-style: none;
       margin: 0;
