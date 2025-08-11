@@ -90,13 +90,15 @@
 
 
        nav {
-      width: 100%;
       background-color: #2980b9;
       padding: 10px 20px;
       box-sizing: border-box;
       border-radius: 0;
       margin-bottom: 20px;
-      position: sticky;
+      position: fixed; /* or absolute */
+  left: 0;
+  right: 0;
+  width: 100vw; 
       top: 0;
       z-index: 100;
     }
