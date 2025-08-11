@@ -6,12 +6,17 @@
   <title>Spiritual and Professional Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Simple horizontal menu */
+    /* Full-width horizontal menu */
     nav {
+      width: 100%;
       background-color: #2980b9;
       padding: 10px 20px;
-      border-radius: 8px;
+      box-sizing: border-box;
+      border-radius: 0;
       margin-bottom: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav ul {
       display: flex;
@@ -19,6 +24,8 @@
       margin: 0;
       padding: 0;
       gap: 15px;
+      overflow-x: auto;
+      white-space: nowrap;
     }
     nav ul li {
       margin: 0;
@@ -27,9 +34,20 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
+      padding: 6px 8px;
+      display: inline-block;
     }
     nav ul li a:hover {
       text-decoration: underline;
+    }
+
+    /* Optional: Hide scrollbar but allow horizontal scroll */
+    nav ul::-webkit-scrollbar {
+      height: 6px;
+    }
+    nav ul::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.3);
+      border-radius: 3px;
     }
   </style>
 </head>
